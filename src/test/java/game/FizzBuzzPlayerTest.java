@@ -24,9 +24,13 @@ public class FizzBuzzPlayerTest {
 
     @Test
     public void testNormal() {
-        final int input = 1;
-        String actual = FizzBuzzPlayer.answer(input);
-        assertEquals("1", actual);
+        final int[] inputs = {1, 2, 4, 7, 11};
+        for (int i = 0; i < inputs.length; i++) {
+            int input = inputs[i];
+            String actual = FizzBuzzPlayer.answer(input);
+            String expected = String.valueOf(input);
+            assertEquals(expected, actual);
+        }
     }
 
 }
