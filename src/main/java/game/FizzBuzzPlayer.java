@@ -7,7 +7,7 @@ public class FizzBuzzPlayer {
         } else if (isBuzz(number)) {
             return "Buzz";
         }
-        return "1";
+        return String.valueOf(number);
     }
 
     private static boolean isFizz(int number) {
