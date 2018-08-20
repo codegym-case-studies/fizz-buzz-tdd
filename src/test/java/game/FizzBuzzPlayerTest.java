@@ -22,4 +22,11 @@ public class FizzBuzzPlayerTest {
         assertEquals(BUZZ, actual);
     }
 
+    @Test
+    public void testNormal() {
+        final int input = 1;
+        String actual = FizzBuzzPlayer.answer(input);
+        assertEquals("1", actual);
+    }
+
 }
